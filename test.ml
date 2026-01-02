@@ -45,9 +45,52 @@ Write an expression that compares "hi" to "hi" using physical equality. What is 
 "hi" == "hi" output bool = false *)
 
 
-let () = assert (1 + 1 = 2);;
 
 
+
+(* Exercise: if [★]
+Write an if expression that evaluates to 42 if 2 is greater than 1 and otherwise evaluates to 7. *)
+
+(* answer and code 
+ if 2 > 1 then 42 else 7;;
+- : int = 42 *)
+
+
+(* Exercise: double fun [★]
+
+Using the increment function from above as a guide, define a function double that multiplies its input by 2. 
+For example, double 7 would be 14. Test your function by applying it to a few inputs. 
+Turn those test cases into assertions.
+
+
+Code and answer 
+
+(fun input -> input * 2) (2);; returns 4 *)
+
+
+(* Exercise: more fun [★★]
+
+Define a function that computes the cube of a floating-point number. Test your function by applying it to a few inputs.
+Define a function that computes the sign (1, 0, or -1) of an integer. Use a nested if expression. Test your function by applying it to a few inputs.
+Define a function that computes the area of a circle given its radius. Test your function with assert. *)
+
+(* code and answers
+let cube input = input *. input;;
+cube 10.0;;
+
+let theSign  sign =  if sign = 1  then  1 else if sign = 0 then 0  else -1;;
+theSign 1;; *)
+
+(* let circleArea r = (r *. r) *. 3.14;; *)
+
+
+(* Exercise: RMS [★★]
+
+Define a function that computes the root mean square of two numbers—i.e., 
+. Test your function with assert. *)
+
+(* Answer and code;
+let roots x y = sqrt( ((x *. 2.) +. (y *. 2.)) /. 2. ) *)
 
 
 
